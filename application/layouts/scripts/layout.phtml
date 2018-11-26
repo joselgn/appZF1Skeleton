@@ -1,0 +1,93 @@
+<?php echo $this->doctype() ?>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+    <!-- the "no-js" class is for Modernizr. -->
+    <head>
+        <meta charset="utf-8">
+
+        <?php echo $this->headTitle(); ?>
+        <meta name="description" content="">
+
+        <!-- Mobile viewport optimized: h5bp.com/viewport -->
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Load Styles -->
+        <?php       
+        /*$this->headLink()->appendStylesheet('/js/jQuery/ui/jquery-ui.css');
+        $this->headLink()->appendStylesheet('/js/jQuery/ui/jquery-ui.min.css');
+        $this->headLink()->appendStylesheet('/js/jQuery/ui/jquery-ui.structure.css');
+        $this->headLink()->appendStylesheet('/js/jQuery/ui/jquery-ui.structure.min.css');
+        $this->headLink()->appendStylesheet('/js/jQuery/ui/jquery-ui.theme.css');
+        $this->headLink()->appendStylesheet('/js/jQuery/ui/jquery-ui.theme.min.css');
+        $this->headLink()->appendStylesheet('/bootstrap/css/bootstrap.css');
+        $this->headLink()->appendStylesheet('/bootstrap/css/bootstrap.min.css');
+        $this->headLink()->appendStylesheet('/bootstrap/css/bootstrap-theme.css');
+        $this->headLink()->appendStylesheet('/bootstrap/css/bootstrap-theme.min.css');
+        //$this->headLink()->appendStylesheet('/css/layout.css');
+        echo $this->headLink();
+        ?>
+        
+        <!-- Load Scripts  -->
+        <?php
+        $this->headScript()->appendFile('/js/jQuery/jquery.js');
+        $this->headScript()->appendFile('/js/jQuery/ui/jquery-ui.js');
+        $this->headScript()->appendFile('/js/jQuery/ui/jquery-ui.min.js');
+        $this->headScript()->appendFile('/bootstrap/js/bootstrap.js');
+        $this->headScript()->appendFile('/bootstrap/js/bootstrap.min.js');
+        $this->headScript()->appendFile('/bootstrap-3.2.0/js/dropdown.js');
+        $this->headScript()->appendFile('/bootstrap-3.2.0/js/carousel.js');
+        $this->headScript()->appendFile('/bootstrap-3.2.0/js/transition.js');
+        $this->headScript()->appendFile('/bootstrap-3.2.0/js/tooltip.js');
+        $this->headScript()->appendFile('/bootstrap-3.2.0/js/collapse.js');
+        $this->headScript()->appendFile('/bootstrap-3.2.0/js/affix.js');
+        $this->headScript()->appendFile('/bootstrap-3.2.0/js/alert.js');
+        $this->headScript()->appendFile('/bootstrap-3.2.0/js/button.js');
+        $this->headScript()->appendFile('/bootstrap-3.2.0/js/modal.js');
+        $this->headScript()->appendFile('/bootstrap-3.2.0/js/popover.js');
+        $this->headScript()->appendFile('/bootstrap-3.2.0/js/scrollspy.js');
+        $this->headScript()->appendFile('/bootstrap-3.2.0/js/tab.js');
+        //$this->headScript()->appendFile('/js/scripts.js');
+        echo $this->headScript(); */
+        ?>
+        
+        <script>
+            var baseUrl = '<?php echo $this->basePath; ?>';           
+        </script> 
+    </head>
+    <body>        
+           
+        <div class="container">        
+            <?php echo $this->layout()->content; ?>
+        </div>
+        
+        <!--Back to TOP-->
+        <div id="top-back">
+            <span id="top-link-block" class="hidden " >
+                <a href="#top" class="well well-sm"  onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+                    <i class="glyphicon glyphicon-chevron-up"></i>
+                </a>
+            </span><!-- /top-link-block -->            
+        </div>
+        
+        <br/>
+        <hr/>
+        
+        <!--FOOTER-->
+        <footer id="footer" class="footer text-center">
+            <div class="col-md-12 footer font-title"> 
+                <div id="dv_footer_endereco" class="text-justify">
+                    <em>
+                        <b>CREA-DF - Conselho Regional de Engenharia e Agronomia do Distrito Federal</b><br/>
+                    </em>
+                </div>
+                <div id="footer-copyright" class="font-title" >
+                    Copyright &copy; 2010 - Assessoria de Tecnologia da Informação - ATI / Crea-DF
+                </div>
+            </div>            
+        </footer>
+
+    </body>
+</html>

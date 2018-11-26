@@ -1,0 +1,11 @@
+
+<?php 
+    echo 'Error File';
+    
+    ?>
+
+<h1><?= $this->exception?></h1>
+<br>
+<h3><?= $this->message?></h3>
+<br>
+<?php print_r(error_get_last()); ?>

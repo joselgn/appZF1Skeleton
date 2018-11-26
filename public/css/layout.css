@@ -1,0 +1,100 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 19, 2014, 10:15:02 AM
+    Author     : josefilho
+*/
+
+body{
+    
+}
+
+a{
+    outline: 0;
+}
+
+span .title h2 {
+    color: #778899;
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;    
+}
+
+#logo{
+    /*background: #00b3ee;*/
+    /*background: #3982C1;*/
+    color: #FFF;
+    
+    background: rgb(26,84,147); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(26,84,147,1) 27%, rgba(26,84,147,1) 27%, rgba(48,113,255,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(27%,rgba(26,84,147,1)), color-stop(27%,rgba(26,84,147,1)), color-stop(100%,rgba(48,113,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(26,84,147,1) 27%,rgba(26,84,147,1) 27%,rgba(48,113,255,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(26,84,147,1) 27%,rgba(26,84,147,1) 27%,rgba(48,113,255,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(26,84,147,1) 27%,rgba(26,84,147,1) 27%,rgba(48,113,255,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(26,84,147,1) 27%,rgba(26,84,147,1) 27%,rgba(48,113,255,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a5493', endColorstr='#3071ff',GradientType=0 ); /* IE6-9 */
+}
+
+.crea-bg {
+    background: url("../img/background/papel.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+    padding: 80px 0;
+}
+
+
+.font-title{
+    font-family: font-title;
+}
+
+//Back to TOP
+#top-back{
+    z-index: 255 !important;
+}
+#top-link-block a{
+    outline: 0;
+}
+#top-link-block.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px; /* negative of the offset - height of link element */
+    right: 10px; /* padding from the left side of the window */
+    z-index: 255;
+}
+#top-link-block.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 18px; /* height of link element */
+    right: 10px; /* padding from the left side of the window */
+    z-index: 255;
+}
+
+//FOOTER
+#footer{
+     z-index: 250 !important;
+}
+
+#dv_footer_endereco{
+    z-index: 250 !important;
+}
+.footer{
+    /*background-color: #428BCA !important;*/  
+    font-size: 14px;
+    z-index: 250;
+}
+#footer-copyright{
+    font-size: 12px;
+}
+
+
+/* @FONTS IMPORT */
+//IE
+@font-face {
+    font-family: font-title;
+    src: url(fonts/Stencilia-A.eot);    
+} 
+
+//OTHERS BROWSERS
+@font-face {
+    font-family: font-title;
+    src: url(fonts/Stencilia-A.eot);    
+} 
